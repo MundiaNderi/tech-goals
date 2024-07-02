@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="/src/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Tech Goals</title>
+  </head>
+
+  <body class="m-9">
+    <nav class="my-4 items-center">
+      <div class="flex flex-row justify-between">
+        <div>
+          <h1
+            class="font-bold md:font-large text-veryDarkBlue"
+            data-testid="slackDisplayName"
+          >
+            Serah Nderi
+          </h1>
+        </div>
+        <div class="hidden md:flex flex-row gap-4 no-underline">
+          <a
+            class="no-underline text-veryDarkBlue hover:text-desaturatedBlue font-bold cursor-pointer"
+            href="https://single-page-gamma.vercel.app"
+            >Portfolio</a
+          >
+          <a
+            class="no-underline text-veryDarkBlue hover:text-desaturatedBlue cursor-pointer font-bold"
+            href="https://github.com/MundiaNderi"
+            >Github</a
+          >
+          <a
+            class="no-underline text-veryDarkBlue hover:text-desaturatedBlue font-bold cursor-pointer"
+            href="https://www.linkedin.com/in/serah-nderi/"
+            >LinkedIn</a
+          >
+        </div>
+        <!--Hamburger menu-->
+        <button
+          id="menuBtn"
+          class="block bg-none hamburger md:hidden border-none focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!--Mobile Menu-->
+      <div id="menu" class="hidden flex-row gap-4 my-3 no-underline">
+        <a
+          class="no-underline text-veryDarkBlue hover:text-desaturatedBlue cursor-pointer font-bold"
+          href=""
+          >Portfolio</a
+        >
+        <a
+          class="no-underline text-veryDarkBlue hover:text-desaturatedBlue cursor-pointer font-bold"
+          href=""
+          >Github</a
+        >
+        <a
+          class="no-underline text-veryDarkBlue hover:text-desaturatedBlue cursor-pointer font-bold"
+          href=""
+          >LinkedIn</a
+        >
+      </div>
+    </nav>
+
+    <!--User Info-->
+    <div class="mb-4 items-center justify-center">
+      <hr />
+      <div class="flex flex-col md:flex-row my-5">
+        <img
+          src="/assets/Serah NN.jpeg"
+          alt="Profile Picture"
+          data-testid="slackProfilePicture"
+          width="300"
+          height="300"
+        />
+        <div class="md:ml-20 flex flex-col">
+          <p
+            class="font-Raleway text-veryDarkBlue py-2"
+            data-testid="slackEmail"
+          >
+            sarahngima77@gmail.com
+          </p>
+          <p
+            class="font-Raleway text-veryDarkBlue py-2"
+            data-testid="currentTimeUTC"
+          >
+            Current UTC Time: <span id="utc-time"></span>
+          </p>
+          <p
+            class="font-Raleway text-veryDarkBlue py-2"
+            data-testid="currentDay"
+          >
+            Current Day: <span id="current-day"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Tech Goals-->
+    <div class="mb-4">
+      <h2 class="font-Raleway text-veryDarkBlue py-2">
+        My Tech Goals for the Next Two Years
+      </h2>
+      <p class="font-Raleway text-veryDarkBlue py-2">
+        In the next two years, I have set the following goals to advance my
+        frontend development skills:
+      </p>
+      <ul class="list-disc pl-5">
+        <li class="font-Raleway text-veryDarkBlue py-2">
+          <strong>Master ReactJS:</strong> Dive deeper into ReactJS, mastering
+          hooks, context API, and advanced state management techniques to build
+          dynamic and efficient web applications.
+        </li>
+        <li class="font-Raleway text-veryDarkBlue py-2">
+          <strong>Learn TypeScript:</strong> Integrate TypeScript into my
+          projects to enhance code quality and maintainability through strong
+          typing and better development tooling.
+        </li>
+        <li class="font-Raleway text-veryDarkBlue py-2">
+          <strong>Explore Next.js:</strong> Gain proficiency in Next.js for
+          server-side rendering, static site generation, and optimized
+          performance for React applications.
+        </li>
+        <li class="font-Raleway text-veryDarkBlue py-2">
+          <strong>Enhance UI/UX Design Skills:</strong> Study and apply
+          principles of UI/UX design to create visually appealing and
+          user-friendly interfaces. Experiment with tools like Figma and Sketch.
+        </li>
+        <li class="font-Raleway text-veryDarkBlue py-2">
+          <strong>Contribute to Open Source:</strong> Actively participate in
+          open-source projects related to frontend development to give back to
+          the community and collaborate with other developers.
+        </li>
+        <li class="font-Raleway text-veryDarkBlue py-2">
+          <strong>Build a Personal Project Portfolio:</strong> Develop a series
+          of personal projects showcasing my frontend skills, including a
+          portfolio website, interactive web apps, and design systems.
+        </li>
+        <li class="font-Raleway text-veryDarkBlue py-2">
+          <strong>Stay Updated with Industry Trends:</strong> Regularly follow
+          blogs, attend webinars, and participate in conferences to stay updated
+          with the latest frontend technologies and best practices.
+        </li>
+        <li class="font-Raleway text-veryDarkBlue py-2">
+          <strong>Improve Performance Optimization:</strong> Learn and implement
+          techniques for optimizing web performance, including lazy loading,
+          code splitting, and efficient asset management.
+        </li>
+        <li class="font-Raleway text-veryDarkBlue py-2">
+          <strong>Automate Testing:</strong> Integrate automated testing
+          frameworks such as Jest and Cypress to ensure code reliability and
+          streamline the development workflow.
+        </li>
+        <li class="font-Raleway text-veryDarkBlue py-2">
+          <strong>Achieve Professional Certification:</strong> Aim to obtain
+          certifications like Google Mobile Web Specialist or other relevant
+          industry-recognized credentials.
+        </li>
+      </ul>
+    </div>
+
+    <!--Links-->
+    <footer class="flex flex-col md:flex-row md:justify-around">
+      <div class="flex flex-col items-center md:items-start">
+        <h2 class="">Useful Links</h2>
+        <a
+          class="no-underline text-veryDarkBlue gap-4 my-3 hover:text-desaturatedBlue cursor-pointer font-bold mb-1"
+          href="https://hng.tech/learn"
+          data-testid="hngLink"
+          >HNG Learn</a
+        >
+        <a
+          class="no-underline text-veryDarkBlue gap-4 my-3 hover:text-desaturatedBlue cursor-pointer font-bold mb-1"
+          href="https://keyword.dog"
+          data-testid="keywordLink"
+          >Keyword Dog</a
+        >
+        <a
+          class="no-underline text-veryDarkBlue gap-4 my-3 hover:text-desaturatedBlue cursor-pointer font-bold"
+          href="https://scrapeanyweb.site"
+          data-testid="scrapeanywebLink"
+          >Scrape Any Web</a
+        >
+      </div>
+      <div
+        class="flex flex-col gap-4 sm:items-center mt-8 md:mt-0 no-underline"
+      >
+        <h2 class="">Contact</h2>
+        <a
+          class="no-underline text-veryDarkBlue hover:text-desaturatedBlue cursor-pointer font-bold"
+          href=""
+          >Portfolio</a
+        >
+        <a
+          class="no-underline text-veryDarkBlue hover:text-desaturatedBlue cursor-pointer font-bold"
+          href=""
+          >Github</a
+        >
+        <a
+          class="no-underline text-veryDarkBlue hover:text-desaturatedBlue cursor-pointer font-bold"
+          href=""
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
